@@ -1,6 +1,10 @@
-# Agentes Blueprint Blog WordPress
+# Agentes - Blog Cine y Series (Automatizado)
 
-Principios: franqueza respetuosa, abogado del diablo, documentación clara y Definition of Done verificable. Clasifica procesos por nivel de madurez (`MVP`, `Growth`, `Scale`) para priorizar.
+**Objetivo**: Máxima automatización para generar contenido "Series sin Paja" y gestionar el blog con mínima intervención manual.
+
+**Nicho**: Cine y series, especializado en guías curadas sin relleno.
+**Tiempo disponible**: 4 horas/día cuando sea necesario.
+**Automatización**: N8N + Make Connect (3000 tareas/mes) + agentes IA.
 
 ## Orquestador General (Owner: Blog-Orchestrator)
 - **Objetivo**: priorizar, desglosar tareas y coordinar a los agentes humanos/IA.
