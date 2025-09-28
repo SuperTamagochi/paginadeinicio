@@ -1,0 +1,10 @@
+
+# Archivos de credenciales - NUNCA COMMITEAR
+docs/setup/credenciales.md
+docs/setup/credenciales-*.md
+*.env
+.env.*
+!.env.example
+credentials.json
+*-credentials.json
+*-service-account.json
