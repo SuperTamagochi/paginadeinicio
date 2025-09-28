@@ -10,9 +10,9 @@
 1. Ve a **Usuarios > Añadir nuevo**
 2. Completa los datos:
    ```
-   Nombre de usuario: sin-paja-bot
-   Email: api-blog@tu-dominio.com (usar email real)
-   Rol: Editor
+   Nombre de usuario: Guardian-del-Canon
+   Email: guardian+javierfuentesizquierdo@gmail.com
+   Rol: Administrador
    Contraseña: [generar una robusta, no la usaremos]
    ```
 3. **Importante**: Desmarcar "Enviar notificación por email al usuario"
@@ -22,7 +22,7 @@
 
 #### Para WordPress 5.6+:
 1. Ve a **Usuarios > Todos los usuarios**
-2. Haz clic en **Editar** del usuario `sin-paja-bot`
+2. Haz clic en **Editar** del usuario `Guardian-del-Canon`
 3. Scroll down hasta **Application Passwords**
 4. En "New Application Password Name" escribe: `Pabbly-N8N-Automation`
 5. Clic en **Add New Application Password**
@@ -37,7 +37,7 @@ Instala el plugin **Application Passwords** desde el repositorio oficial.
 #### Test básico con curl:
 ```bash
 # Reemplaza con tus datos reales
-curl -u "sin-paja-bot:xxxx xxxx xxxx xxxx" \
+curl -u "Guardian-del-Canon:xxxx xxxx xxxx xxxx" \
   https://tu-dominio.com/wp-json/wp/v2/posts?per_page=1
 ```
 
@@ -50,7 +50,7 @@ curl -u "sin-paja-bot:xxxx xxxx xxxx xxxx" \
 ```bash
 # WordPress REST API Configuration
 WP_API_BASE_URL=https://tu-dominio.com/wp-json/wp/v2
-WP_API_USERNAME=sin-paja-bot
+WP_API_USERNAME=Guardian-del-Canon
 WP_API_PASSWORD=xxxx xxxx xxxx xxxx
 WP_SITE_URL=https://tu-dominio.com
 
@@ -117,14 +117,14 @@ add_action('rest_api_init', function() {
 
 ### 1. Listar Posts
 ```bash
-curl -u "sin-paja-bot:password" \
+curl -u "Guardian-del-Canon:password" \
   "https://tu-dominio.com/wp-json/wp/v2/posts?per_page=5"
 ```
 
 ### 2. Crear Post (Draft)
 ```bash
 curl -X POST \
-  -u "sin-paja-bot:password" \
+  -u "Guardian-del-Canon:password" \
   -H "Content-Type: application/json" \
   -d '{
     "title": "Test API Post",
@@ -138,14 +138,14 @@ curl -X POST \
 ### 3. Subir Imagen
 ```bash
 curl -X POST \
-  -u "sin-paja-bot:password" \
+  -u "Guardian-del-Canon:password" \
   -F "file=@imagen.jpg" \
   "https://tu-dominio.com/wp-json/wp/v2/media"
 ```
 
 ### 4. Listar Categorías
 ```bash
-curl -u "sin-paja-bot:password" \
+curl -u "Guardian-del-Canon:password" \
   "https://tu-dominio.com/wp-json/wp/v2/categories"
 ```
 
@@ -155,7 +155,7 @@ curl -u "sin-paja-bot:password" \
 1. **App**: WordPress
 2. **Connection Name**: "Blog Cine Series API"
 3. **WordPress URL**: `https://tu-dominio.com`
-4. **Username**: `sin-paja-bot`
+4. **Username**: `Guardian-del-Canon`
 5. **Password**: `[Application Password generada]`
 
 ### Test de Conexión:
@@ -171,7 +171,7 @@ curl -u "sin-paja-bot:password" \
   "type": "n8n-nodes-base.wordpress",
   "credentials": {
     "url": "https://tu-dominio.com",
-    "username": "sin-paja-bot",
+    "username": "Guardian-del-Canon",
     "password": "[Application Password]"
   }
 }
@@ -203,7 +203,7 @@ remove_filter('json_enabled', '__return_false');
 
 ## ✅ Checklist de Validación
 
-- [ ] Usuario `sin-paja-bot` creado con rol Editor/API Agent
+- [ ] Usuario `Guardian-del-Canon` creado con rol Editor/API Agent
 - [ ] Application Password generada y guardada de forma segura
 - [ ] Test curl básico funciona (status 200)
 - [ ] Variables de entorno configuradas en `.env.local`
