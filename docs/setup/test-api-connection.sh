@@ -13,8 +13,10 @@ if [ ! -f ".env.local" ]; then
     exit 1
 fi
 
-# Cargar variables de entorno
+# Cargar variables de entorno (evitar problemas con espacios en passwords)
+set -a
 source .env.local
+set +a
 
 # Verificar variables obligatorias
 if [ -z "$WP_API_BASE_URL" ] || [ -z "$WP_API_USERNAME" ] || [ -z "$WP_API_PASSWORD" ]; then
@@ -163,7 +165,7 @@ echo "✅ Upload media: OK"
 echo "✅ Taxonomías: OK"
 echo ""
 echo "🚀 WordPress REST API configurado correctamente!"
-echo "💡 Ahora puedes configurar Pabbly Connect y N8N"
+echo "💡 Ahora puedes configurar Make Connect y N8N"
 echo ""
 
 # Mostrar endpoints útiles

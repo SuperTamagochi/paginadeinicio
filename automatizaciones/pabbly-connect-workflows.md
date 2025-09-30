@@ -1,5 +1,7 @@
 # Pabbly Connect Workflows - Blog Cine y Series
 
+> ⚠️ **Documento legado**: Mantén esta guía solo como referencia histórica. El flujo en producción utiliza Make Connect (`automatizaciones/make-connect-workflows.md`).
+
 Configuración específica para Pabbly Connect (3000 tareas/mes Lifetime Deal) para automatizar procesos del blog.
 
 ## 🚀 Ventajas de Pabbly Connect

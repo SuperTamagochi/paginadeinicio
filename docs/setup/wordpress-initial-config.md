@@ -289,7 +289,7 @@ ExpiresByType image/png "access plus 1 month"
 ### Automatización
 - [ ] REST API testeada con curl
 - [ ] Variables de entorno configuradas
-- [ ] Pabbly Connect conectado
+- [ ] Make Connect conectado
 - [ ] N8N configurado (si aplica)
 
 ---
