@@ -22,8 +22,8 @@
 **Tu punto**: Más eficiente con Claude/Perplexity directamente
 **Análisis**: **TIENES RAZÓN**
 - Claude/Perplexity: Análisis instantáneo + contextual
-- Make Connect: Multi-step estable, ideal para tareas repetitivas
-- **Mejor enfoque**: Usar Claude para research, Make para tasks mecánicos
+- Pabbly Connect: Multi-step estable, ideal para tareas repetitivas
+- **Mejor enfoque**: Usar Claude para research, Pabbly para tasks mecánicos
 
 ### **Workflow 3 - Amazon Affiliate** ⚠️ REVISAR
 **Tu punto**: Plugin Hostinger Amazon - ¿Compatible con REST API?
@@ -52,4 +52,4 @@
 ---
 
 **ACCIÓN INMEDIATA**:
-¿Deberíamos pausar Make Connect y primero analizar tus datos Analytics para redefinir estrategia?
+¿Deberíamos pausar Pabbly Connect y primero analizar tus datos Analytics para redefinir estrategia?

@@ -4,7 +4,7 @@
 
 **Nicho**: Cine y series, especializado en guías curadas sin relleno.
 **Tiempo disponible**: 4 horas/día cuando sea necesario.
-**Automatización**: N8N + Make Connect (3000 tareas/mes) + agentes IA.
+**Automatización**: N8N + Pabbly Connect (3000 tareas/mes) + agentes IA.
 
 ## Orquestador General (Owner: Blog-Orchestrator)
 - **Objetivo**: priorizar, desglosar tareas y coordinar a los agentes humanos/IA.
@@ -53,9 +53,9 @@
 
 ## Automatización & Integraciones (Owner: Automations-Agent)
 - **Procesos (MVP)**: integraciones REST/GraphQL básicas, formularios a CRM, webhooks.
-- **Procesos (Growth)**: automatizaciones n8n/Make/Zapier, sincronización con newsletters, segmentación dinámica.
+- **Procesos (Growth)**: automatizaciones n8n/Pabbly/Zapier, sincronización con newsletters, segmentación dinámica.
 - **Subagentes**: `form-webhook-builder`, `crm-sync`, `rest-api-connector`, `data-pipeline-keeper`.
-- **Herramientas**: WordPress REST API personalizada, FluentCRM/Mailerlite, Make, Zapier, Supabase/Airtable.
+- **Herramientas**: WordPress REST API personalizada, FluentCRM/Mailerlite, Pabbly Connect, Zapier, Supabase/Airtable.
 - **Hooks & comandos**: registrar scripts en `claude/reference/HOOKS_COMMANDS.md` y mantener inventario en `docs/processes/tooling_overview.md`.
 
 ## Analítica & Monetización (Owner: Analytics-Agent)

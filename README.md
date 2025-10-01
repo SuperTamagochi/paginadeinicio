@@ -10,7 +10,7 @@ Guías curadas de episodios esenciales para ver series largas (Expediente X, CSI
 - **Objetivo**: Automatización máxima con agentes IA
 - **Tiempo dedicación**: 4 horas/día (cuando sea necesario)
 - **Monetización**: Afiliación Amazon + Ads (cuando crezca el tráfico)
-- **Automatización**: N8N + Make Connect (3000 tareas/mes) + agentes IA
+- **Automatización**: N8N + Pabbly Connect (3000 tareas/mes Lifetime Deal)
 
 ## 🎯 Estrategia de Contenido
 1. **Series sin Paja**: Guías de episodios esenciales
@@ -34,7 +34,7 @@ Guías curadas de episodios esenciales para ver series largas (Expediente X, CSI
 ### 🧭 Guía rápida por directorios
 - `analisis/`: evaluaciones del sitio y del mercado.
 - `analytics/`: datos crudos y resultados de dashboards (ver `analytics/README.md`).
-- `automatizaciones/`: workflows de N8N y Make Connect.
+- `automatizaciones/`: workflows de N8N y Pabbly Connect.
 - `contenido/`: borradores listos para publicar y guías de estilo.
 - `documentacion/`: repositorio histórico/legacy (ver README en carpeta).
 - `experimentos/`: pruebas controladas y ensayos (ver README en carpeta).
@@ -50,7 +50,7 @@ Guías curadas de episodios esenciales para ver series largas (Expediente X, CSI
 - **Analytics-Agent**: Reportes semanales automatizados
 - **Affiliate-Agent**: Gestión enlaces Amazon + revenue optimization
 
-### Workflows Automatizados (N8N + Make Connect)
+### Workflows Pabbly Connect
 - **Content Pipeline**: Google Form → Research → WordPress → Social Media
 - **Analytics Reports**: GA4 + GSC → Weekly insights → Dashboard
 - **Affiliate Optimization**: Daily check + link maintenance
@@ -86,7 +86,7 @@ Guías curadas de episodios esenciales para ver series largas (Expediente X, CSI
 ## 🗂️ Próximos Pasos Inmediatos
 
 1. **Sube datos analytics** a `/inputs/` para análisis inicial
-2. **Configura Make Connect** siguiendo `/automatizaciones/make-connect-workflows.md`
+2. **Configura Pabbly Connect** siguiendo `/automatizaciones/pabbly-connect-workflows.md`
 3. **Crea primer post** usando borrador Expediente X como base
 4. **Setup WordPress API** para automatización
 5. **Configura tracking** GA4 + GSC + Amazon Associates

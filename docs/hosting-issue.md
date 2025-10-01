@@ -45,7 +45,7 @@ PROBLEMA:
 
 NECESITO:
 Habilitar métodos POST, PUT, DELETE para REST API para automatizaciones con:
-- Make Connect
+- Pabbly Connect
 - Scripts personalizados
 - Integración con herramientas de terceros
 
@@ -74,7 +74,7 @@ Gracias.
 - ❌ **Media uploads via API**
 
 ### Workaround temporal:
-1. **Make Connect**: Configurar workflows de solo lectura
+1. **Pabbly Connect**: Configurar workflows de solo lectura
 2. **Content creation**: Generar drafts localmente
 3. **Manual publishing**: Usar WordPress Admin hasta resolver POST
 4. **N8N workflows**: Configurar para research y analytics

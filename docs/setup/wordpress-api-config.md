@@ -1,6 +1,6 @@
 # Configuración WordPress REST API - Guía Práctica
 
-**Objetivo**: Configurar acceso seguro para automatizaciones con Make Connect, N8N y agentes IA.
+**Objetivo**: Configurar acceso seguro para automatizaciones con Pabbly Connect, N8N y agentes IA.
 
 ## 🔧 Pasos de Configuración
 
@@ -24,7 +24,7 @@
 1. Ve a **Usuarios > Todos los usuarios**
 2. Haz clic en **Editar** del usuario `Guardian-del-Canon`
 3. Scroll down hasta **Application Passwords**
-4. En "New Application Password Name" escribe: `Make-N8N-Automation`
+4. En "New Application Password Name" escribe: `Pabbly-N8N-Automation`
 5. Clic en **Add New Application Password**
 6. **¡CRÍTICO!** Copia inmediatamente la contraseña generada (formato: `xxxx xxxx xxxx xxxx`)
 7. Guárdala en un lugar seguro (1Password, Bitwarden, etc.)
@@ -149,17 +149,17 @@ curl -u "Guardian-del-Canon:password" \
   "https://tu-dominio.com/wp-json/wp/v2/categories"
 ```
 
-## 🔗 Integración con Make Connect
+## 🔗 Integración con Pabbly Connect
 
-### Configuración en Make:
-1. **Módulo**: WordPress > Create/Update a Post
+### Configuración en Pabbly:
+1. **App**: WordPress
 2. **Connection Name**: "Blog Cine Series API"
 3. **WordPress URL**: `https://tu-dominio.com`
 4. **Username**: `Guardian-del-Canon`
 5. **Password**: `[Application Password generada]`
 
 ### Test de Conexión:
-- Make debería poder listar posts existentes
+- Pabbly debería poder listar posts existentes
 - Crear un post de prueba en draft mode
 
 ## 🔗 Integración con N8N
@@ -208,7 +208,7 @@ remove_filter('json_enabled', '__return_false');
 - [ ] Test curl básico funciona (status 200)
 - [ ] Variables de entorno configuradas en `.env.local`
 - [ ] `.env.local` añadido a .gitignore
-- [ ] Make Connect conectado y testeado
+- [ ] Pabbly Connect conectado y testeado
 - [ ] N8N configurado (si aplica)
 - [ ] Monitoreo/logs configurado
 - [ ] Documentadas las credenciales de forma segura
@@ -217,7 +217,7 @@ remove_filter('json_enabled', '__return_false');
 
 ### Rotación de Passwords (cada 90 días):
 1. Generar nueva Application Password
-2. Actualizar en Make Connect
+2. Actualizar en Pabbly Connect
 3. Actualizar en N8N
 4. Actualizar variables de entorno
 5. Revocar password anterior

@@ -165,7 +165,7 @@ echo "✅ Upload media: OK"
 echo "✅ Taxonomías: OK"
 echo ""
 echo "🚀 WordPress REST API configurado correctamente!"
-echo "💡 Ahora puedes configurar Make Connect y N8N"
+echo "💡 Ahora puedes configurar Pabbly Connect y N8N"
 echo ""
 
 # Mostrar endpoints útiles

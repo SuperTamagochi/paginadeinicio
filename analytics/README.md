@@ -14,5 +14,5 @@ Espacio operativo para la automatización y análisis cuantitativo del blog.
 
 ## Próximos pasos sugeridos
 - Crear plantilla de dashboard en Looker Studio y documentar aquí la URL.
-- Sincronizar este repositorio con los escenarios de Make/N8N que generan reportes automáticos.
+- Sincronizar este repositorio con los escenarios de Pabbly/N8N que generan reportes automáticos.
 - Añadir scripts de validación (por ejemplo, `python analytics/scripts/validate_ga4.py`) cuando se incorporen procesos recurrentes.

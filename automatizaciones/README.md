@@ -6,7 +6,7 @@ Configuración de automatizaciones para maximizar la eficiencia del blog con mí
 
 ### Herramientas Disponibles
 - **N8N Server**: Workflows complejos y scraping
-- **Make Connect**: 3000 operaciones/mes incluidas (Lifetime Deal)
+- **Pabbly Connect**: 3000 tareas/mes incluidas (Lifetime Deal)
 - **Claude + Agentes**: Generación de contenido y análisis
 - **WordPress REST API**: Publicación automatizada
 - **GA4 + GSC**: Analytics automáticos
@@ -20,7 +20,7 @@ Configuración de automatizaciones para maximizar la eficiencia del blog con mí
 1. Agent-Content genera estructura de post
 2. Agent-SEO optimiza keywords y metadatos
 3. Agent-Amazon añade enlaces de afiliación
-4. Make Connect formatea y publica en WordPress
+4. Pabbly Connect formatea y publica en WordPress
 5. Agent-Social crea posts para redes sociales
 
 **Frecuencia**: 2-3 posts/semana
@@ -41,7 +41,7 @@ Configuración de automatizaciones para maximizar la eficiencia del blog con mí
 
 **Trigger**: Lunes por la mañana (weekly)
 **Proceso**:
-1. Make Connect extrae datos GA4 y GSC
+1. Pabbly Connect extrae datos GA4 y GSC
 2. Agent-Analytics genera insights
 3. Identifica posts con mejor performance
 4. Sugiere optimizaciones SEO
@@ -55,8 +55,8 @@ Configuración de automatizaciones para maximizar la eficiencia del blog con mí
 **Proceso**:
 1. N8N monitorea nuevos lanzamientos (box sets, series)
 2. Agent-Affiliate evalúa relevancia para posts
-3. Make Connect actualiza enlaces en posts existentes
-4. Genera alertas para posts con potencial de actualización
+3. Auto-actualiza enlaces en posts existentes
+4. Crea alerts para posts con potencial de actualización
 
 **Output**: Revenue optimization continuo
 
@@ -81,7 +81,7 @@ Output: JSON for content agent
 
 #### 2. WordPress Publisher
 ```
-Trigger: Webhook from Make
+Trigger: Webhook from Pabbly
 ↓
 WordPress REST: Create post
 ↓
@@ -109,21 +109,21 @@ Condition: Performance alerts
 Notification: Issues or wins
 ```
 
-## 🔄 Make Connect Workflows
+## 🔄 Pabbly Connect Workflows
 
 ### Content Distribution Chain
-1. **New Post Published** (WordPress module → webhook)
-2. **Generate Social Posts** (Tools · Text Aggregator + OpenAI module)
-3. **Schedule Publishing** (Buffer/Hootsuite connector)
-4. **Update Analytics** (Google Sheets module)
-5. **Newsletter Addition** (Mailerlite / FluentCRM connector)
+1. **New Post Published** (WordPress trigger)
+2. **Generate Social Posts** (Content templates)
+3. **Schedule Publishing** (Buffer/Hootsuite)
+4. **Update Analytics** (Google Sheets)
+5. **Newsletter Addition** (Mailerlite if applies)
 
 ### Research Assistant Chain
-1. **New Series Input** (Google Form/Airtable → webhook)
+1. **New Series Input** (Google Form/Airtable)
 2. **IMDB Data Fetch** (HTTP module)
-3. **Content Brief Generation** (OpenAI/Claude via HTTP)
-4. **Template Creation** (Google Docs module)
-5. **Notification** (Slack/Email module)
+3. **Content Brief Generation** (OpenAI/Claude)
+4. **Template Creation** (Google Docs)
+5. **Notification** (Slack/Email when ready)
 
 ## 📊 Analytics Automation
 
@@ -165,7 +165,7 @@ Notification: Issues or wins
 ### Phase 1 (Week 1-2): Foundation
 - [ ] Configure WordPress REST API
 - [ ] Setup basic N8N workflows
-- [ ] Connect Make Connect account
+- [ ] Connect Pabbly Connect account
 - [ ] Test content pipeline
 
 ### Phase 2 (Week 3-4): Content Automation
@@ -186,13 +186,13 @@ Notification: Issues or wins
 - WordPress Application Password (for REST API)
 - Google Analytics service account
 - Amazon Associates API
-- Make Connect webhook URLs
+- Pabbly Connect webhook URLs
 
 ### Backup Strategy
 - Daily N8N workflow exports
-- Weekly Make scenario backups
+- Weekly Pabbly workflow exports (JSON)
 - Monthly full system backup
-- Version control for all automation code
+- Version control para todo el código de automatización
 
 ## 📈 Success Metrics
 

@@ -8,7 +8,7 @@
 - [ ] Configurar conexión ExpressVPN/NordVPN + documentar comisiones
 
 ## En curso
-- [ ] Migrar workflows de distribución social a Make (`automatizaciones/make-connect-workflows.md`)
+- [ ] Migrar workflows de distribución social a Pabbly (`automatizaciones/pabbly-connect-workflows.md`)
 - [ ] Actualizar templates de guías "Series sin Paja" con tono definitivo
 
 ## Bloqueados

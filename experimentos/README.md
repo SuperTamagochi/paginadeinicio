@@ -4,7 +4,7 @@ Repositorio para pruebas, hipótesis y tests A/B que no están listos para produ
 
 ## Uso recomendado
 1. **Define la hipótesis**: Describe objetivo, métrica clave y resultado esperado.
-2. **Documenta setup**: Herramientas, datasets, escenarios de Make/N8N implicados.
+2. **Documenta setup**: Herramientas, datasets, escenarios de Pabbly/N8N implicados.
 3. **Registra resultados**: Añade carpeta `YYYY-MM-DD_nombre-experimento/` con conclusiones y próximos pasos.
 4. **Cierra el loop**: Actualiza `docs/decisions/` o `docs/logbook/` cuando un experimento derive en decisión estratégica.
 
